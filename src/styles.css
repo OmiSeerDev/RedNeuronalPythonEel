@@ -1,0 +1,140 @@
+.container {
+  background-color: #FFBF00;
+  display: grid;
+  font-family: 'Lucida Sans',    'Lucida Sans Regular',    'Lucida Grande',    'Lucida Sans Unicode',    sans-serif;
+  gap: 4px;
+}
+
+body {
+  background-color: #FFBF00;
+}
+
+h3 {
+  color: black;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  font-family: arial, sans-serif;
+  width: 100%;
+}
+
+th {
+  border: 1px solid #000010;
+  color: black;
+  padding: 8px;
+  text-align: center;
+}
+
+td {
+  border: 1px solid #000010;
+  color: black;
+  padding: 8px;
+  text-align: center;
+}
+
+tr {
+  background-color: #dddddd;
+  border: 1ppx solid #000010;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  height: 30px;
+  width: 50px;
+}
+
+input+h6 {
+  text-align: center;
+}
+
+input:invalid {
+  background-color: red;
+  border: 3px solid red;
+}
+
+input:invalid+#neVal::after {
+  color: red;
+  content: "El valor debe estar entre 10 y 200";
+  font-weight: bold;
+}
+
+input:invalid+#loVal::after {
+  color: red;
+  content: "El valor debe estar entre 1 y 90";
+  font-weight: bold;
+}
+
+input:invalid+#epVal::after {
+  color: red;
+  content: "El valor debe estar entre 3 y 8";
+  font-weight: bold;
+}
+
+input:valid:not(focus)+#neVal::after {
+  color: green;
+  content: "El valor debe estar entre 10 y 200";
+  font-weight: bold;
+}
+
+input:valid:not(focus)+#loVal::after {
+  color: green;
+  content: "El valor debe estar entre 1 y 90";
+  font-weight: bold;
+}
+
+input:valid:not(focus)+#epVal::after {
+  color: green;
+  content: "El valor debe estar entre 3 y 8";
+  font-weight: bold;
+}
+
+.layout {
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.inputContainer {
+  align-items: center;
+  background-color: #FCF55F;
+  border: blue 2px dotted;
+  padding: 18px 0;
+  width: 210px;
+}
+
+.tableContainer {
+  background-color: darkblue;
+  border: goldenrod 2px dotted;
+  color: white;
+  padding: 0 18px;
+  padding: 18px 0;
+}
+
+.buttonContainer {
+  display: grid;
+  height: 28px;
+}
+
+button {
+  font-family: 'LucidaSans';
+  font-size: medium;
+}
+
+#head {
+  margin: 0;
+  text-align: center;
+}
+
+.sub {
+  color: darkslategrey;
+}
+
+h6 {
+  margin: 0;
+}

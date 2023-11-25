@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script type='text/javascript' src='/eel.js'></script>
+    <script type='text/javascript' src="./index.js"></script>
+
+</head>
+
+<body>
+    <section class="container">
+    <h1 id="head">U5 A1. Vector de configuación</h1>
+    <h3 id="head" class="sub">Métricas de la red neuronal</h3>
+    <section class="layout">
+        <section class="inputContainer">
+            <h3>Neuronas</h3>
+            <input id="neuronsNum" type="number" min="10" max="200" />
+            <h6 id="neVal"></h6>
+            <hr>
+            </hr>
+            <h3>Tamaño del lote</h3>
+            <input id="loadSize" type="number" min="10" max="90" />
+            <h6 id="loVal"></h6>
+            <hr>
+            </hr>
+            <h3>Épocas</h3>
+            <input id="epochNum" type="number" min="3" max="8" />
+            <h6 id="epVal"></h6>
+            <hr>
+            </hr>
+
+            <div class="buttonContainer">
+                <button id="run" type="submit" height="30px">Iniciar análisis</button>
+            </div>
+            <div id=sampleCont>
+        </section>
+        <section class="tableContainer">
+            <table id="metrics">
+                <tr>
+                    <th>Neuronas por capa</th>
+                    <th>Tamaño de lotes</th>
+                    <th>Número de épocas</th>
+                    <th>Promedio de precisión</th>
+                    <th>Promedio de pérdida</th>
+                    <th>Máximo índice de precisión</th>
+                    <th>Máximo índice de pérdida</th>
+                </tr>
+            </table>
+            </div>
+        </section>
+    </section>
+</section>
+</body>
+
+</html>
